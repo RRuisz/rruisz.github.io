@@ -3,11 +3,24 @@
   <head>
     <link href="styles.css" rel="stylesheet" />
     <title>Cheatsheet Roman Ruisz</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- NAVBAR -->
+
+    <nav id="home">
+      <ul>
+        <li><a href="#html">HTML Tags</a></li>
+        <li><a href="#table">HTML Table Tags</a></li>
+        <li><a href="#tableatr">Table Attributes</a></li>
+        <li><a href="#css">CSS Tags</a></li>
+      </ul>
+    </nav>
 
     <!-- HEADER -->
 
@@ -16,270 +29,289 @@
     </header>
 
     <!-- HTML TAGS -->
-
-    <h1>HTML Tags</h1>
-    <table>
-      <thead>
-        <th>Tag</th>
-        <th>Name</th>
-        <th>Beschreibung</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>&lt;h1&gt;&lt;/h1&gt;</td>
-          <td>Überschrift</td>
-          <td>h1-6 Überschriften in versch. Größen</td>
-        </tr>
-        <tr>
-          <td>&lt;p&gt;&lt;/p&gt;</td>
-          <td>Paragraphen</td>
-          <td>Textcontainer</td>
-        </tr>
-        <tr>
-          <td>&lt;img src="" alt=""&gt;</td>
-          <td>Bildlink</td>
-          <td>in src="" link zum Bild in alt="" Bildbeschreibung</td>
-        </tr>
-        <tr>
-          <td>&lt;a href=""&gt;&lt;/a&gt;</td>
-          <td>Link</td>
-          <td>Link auf andere Seite oder # auf der selben Seite</td>
-        </tr>
-        <tr>
-          <td>&lt;link href="" rel=""&gt;</td>
-          <td>Link</td>
-          <td>um zum Beispiel ein stylesheet in html zu implimentieren (styles.css)</td>
-        </tr>
-        <tr>
-          <td>&lt;div&gt;&lt;/div&gt;</td>
-          <td>Container</td>
-          <td>Container mehrer HTML Zeilen</td>
-        </tr>
-        <tr>
-          <td>&lt;article&gt;&lt;/article&gt;</td>
-          <td>Text Container</td>
-          <td>Container mehrer Text Bausteine</td>
-        </tr>
-        <tr>
-          <td>&lt;strong&gt;&lt;/strong&gt;</td>
-          <td>Bold</td>
-          <td>
-            Zum <strong>Bold</strong> schreiben einzelner Wörter in einem
-            Paragraphen
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;em&gt;&lt;/em&gt;</td>
-          <td>Italic</td>
-          <td>
-            Zum <em>kursiv</em> schreiben einzelner Wörter in einem Paragraphen
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;span&gt;&lt;/span&gt;</td>
-          <td>Span</td>
-          <td>
-            zum <span style="color:red">gruppieren</span> und bearbeiten von
-            inline Inhalten
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;br&gt;</td>
-          <td>Linebreak</td>
-          <td>produziert einen Zeilenumbruch in (Fließ-)Text</td>
-        </tr>
-        <tr>
-          <td>&lt;aside&gt;&lt;/aside&gt;</td>
-          <td>aside</td>
-          <td>
-            repräsentiert eine Sektion einer Seite, welche aus Inhalt besteht
-            der nur indirekt zum restlichen Inhalt gehört, also parallel zum
-            Kontext betrachtet werden kann.
-          </td>
-        </tr>
-         <tr>
-          <td>&lt;cite&gt;&lt;/cite&gt;</td>
-          <td>Quellenangabe</td>
-          <td>Angabe von Quellen die nicht direkt Lesbar sind, aber in den Metadaten gefunden werden können
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;hr&gt;</td>
-          <td>horizontal rule</td>
-          <td> wird verwendet, um eine horizontale Linie einzufügen
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;nav&gt;&lt;/nav&gt;</td>
-          <td>Navigationsleiste</td>
-          <td> zeichent einen Seitenbereich aus, der dazu bestimmt ist Navigationslinks bereitzustellen
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;q&gt;&lt;/q&gt;</td>
-          <td>Quote (=Zitat)</td>
-          <td>  indiziert, dass es sich bei dem eingeschlossenen Text um ein kurzes Zitat handelt (kursiv geschrieben)
-          </td>
-        </tr>
+    <div class="content">
+      <h1 id="html">HTML Tags</h1>
+      <table>
+        <thead>
+          <th>Tag</th>
+          <th>Name</th>
+          <th>Beschreibung</th>
+        </thead>
+        <tbody>
           <tr>
-          <td>&lt;ol&gt;&lt;/ol&gt;</td>
-          <td>orderd list</td>
-          <td> geordnete Liste (nach zahlen geordnet)
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;ul&gt;&lt;/ul&gt;</td>
-          <td>unorderd list</td>
-          <td> ungeordnete Liste (nach punkten geordnet)
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;li&gt;&lt;/li&gt;</td>
-          <td>Listenpunkt</td>
-          <td>um Listenpunkte hinzuzufügen (child of ul/ol)
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
+            <td>&lt;h1&gt;&lt;/h1&gt;</td>
+            <td>Überschrift</td>
+            <td>h1-6 Überschriften in versch. Größen</td>
+          </tr>
+          <tr>
+            <td>&lt;p&gt;&lt;/p&gt;</td>
+            <td>Paragraphen</td>
+            <td>Textcontainer</td>
+          </tr>
+          <tr>
+            <td>&lt;img src="" alt=""&gt;</td>
+            <td>Bildlink</td>
+            <td>in src="" link zum Bild in alt="" Bildbeschreibung</td>
+          </tr>
+          <tr>
+            <td>&lt;a href=""&gt;&lt;/a&gt;</td>
+            <td>Link</td>
+            <td>Link auf andere Seite oder # auf der selben Seite</td>
+          </tr>
+          <tr>
+            <td>&lt;link href="" rel=""&gt;</td>
+            <td>Link</td>
+            <td>
+              um zum Beispiel ein stylesheet in html zu implimentieren
+              (styles.css)
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;div&gt;&lt;/div&gt;</td>
+            <td>Container</td>
+            <td>Container mehrer HTML Zeilen</td>
+          </tr>
+          <tr>
+            <td>&lt;article&gt;&lt;/article&gt;</td>
+            <td>Text Container</td>
+            <td>Container mehrer Text Bausteine</td>
+          </tr>
+          <tr>
+            <td>&lt;strong&gt;&lt;/strong&gt;</td>
+            <td>Bold</td>
+            <td>
+              Zum <strong>Bold</strong> schreiben einzelner Wörter in einem
+              Paragraphen
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;em&gt;&lt;/em&gt;</td>
+            <td>Italic</td>
+            <td>
+              Zum <em>kursiv</em> schreiben einzelner Wörter in einem
+              Paragraphen
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;span&gt;&lt;/span&gt;</td>
+            <td>Span</td>
+            <td>
+              zum <span style="color: red">gruppieren</span> und bearbeiten von
+              inline Inhalten
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;br&gt;</td>
+            <td>Linebreak</td>
+            <td>produziert einen Zeilenumbruch in (Fließ-)Text</td>
+          </tr>
+          <tr>
+            <td>&lt;aside&gt;&lt;/aside&gt;</td>
+            <td>aside</td>
+            <td>
+              repräsentiert eine Sektion einer Seite, welche aus Inhalt besteht
+              der nur indirekt zum restlichen Inhalt gehört, also parallel zum
+              Kontext betrachtet werden kann.
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;cite&gt;&lt;/cite&gt;</td>
+            <td>Quellenangabe</td>
+            <td>
+              Angabe von Quellen die nicht direkt Lesbar sind, aber in den
+              Metadaten gefunden werden können
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;hr&gt;</td>
+            <td>horizontal rule</td>
+            <td>wird verwendet, um eine horizontale Linie einzufügen</td>
+          </tr>
+          <tr>
+            <td>&lt;nav&gt;&lt;/nav&gt;</td>
+            <td>Navigationsleiste</td>
+            <td>
+              zeichent einen Seitenbereich aus, der dazu bestimmt ist
+              Navigationslinks bereitzustellen
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;q&gt;&lt;/q&gt;</td>
+            <td>Quote (=Zitat)</td>
+            <td>
+              indiziert, dass es sich bei dem eingeschlossenen Text um ein
+              kurzes Zitat handelt (kursiv geschrieben)
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;ol&gt;&lt;/ol&gt;</td>
+            <td>orderd list</td>
+            <td>geordnete Liste (nach zahlen geordnet)</td>
+          </tr>
+          <tr>
+            <td>&lt;ul&gt;&lt;/ul&gt;</td>
+            <td>unorderd list</td>
+            <td>ungeordnete Liste (nach punkten geordnet)</td>
+          </tr>
+          <tr>
+            <td>&lt;li&gt;&lt;/li&gt;</td>
+            <td>Listenpunkt</td>
+            <td>um Listenpunkte hinzuzufügen (child of ul/ol)</td>
+          </tr>
+        </tbody>
+      </table>
+      <a class="homelink" href="#home">Zurück nach Oben</a>
+    </div>
     <!-- HTML TABLE TAGS -->
+    <div class="content">
+      <h1 id="table">HTML Table Tags</h1>
+      <table>
+        <thead>
+          <th>Tag</th>
+          <th>Name</th>
+          <th>Beschreibung</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&lt;table&gt;</td>
+            <td>Tabelle</td>
+            <td>Das Startelemenet einer HTML Tabelle</td>
+          </tr>
+          <tr>
+            <td>&lt;thead&gt;</td>
+            <td>Kopfzeile</td>
+            <td>Zeilenüberschrift</td>
+          </tr>
+          <tr>
+            <td>&lt;tbody&gt;</td>
+            <td>Tabellenkörper</td>
+            <td>Körper der Tabelle</td>
+          </tr>
+          <tr>
+            <td>&lt;tr&gt;</td>
+            <td>tablerow</td>
+            <td>Tabellen Zeile Horizontal</td>
+          </tr>
+          <tr>
+            <td>&lt;td&gt;</td>
+            <td>Table Data</td>
+            <td>Tabellen Feld</td>
+          </tr>
+          <tr>
+            <td>&lt;tfoot&gt;</td>
+            <td>Fußzeile</td>
+            <td>Endzeile der Tabelle (z.b:Summe)</td>
+          </tr>
+        </tbody>
+      </table>
 
-    <h1>HTML Table Tags</h1>
-    <table>
-      <thead>
-        <th>Tag</th>
-        <th>Name</th>
-        <th>Beschreibung</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>&lt;table&gt;</td>
-          <td>Tabelle</td>
-          <td>Das Startelemenet einer HTML Tabelle</td>
-        </tr>
-        <tr>
-          <td>&lt;thead&gt;</td>
-          <td>Kopfzeile</td>
-          <td>Zeilenüberschrift</td>
-        </tr>
-        <tr>
-          <td>&lt;tbody&gt;</td>
-          <td>Tabellenkörper</td>
-          <td>Körper der Tabelle</td>
-        </tr>
-        <tr>
-          <td>&lt;tr&gt;</td>
-          <td>tablerow</td>
-          <td>Tabellen Zeile Horizontal</td>
-        </tr>
-        <tr>
-          <td>&lt;td&gt;</td>
-          <td>Table Data</td>
-          <td>Tabellen Feld</td>
-        </tr>
-        <tr>
-          <td>&lt;tfoot&gt;</td>
-          <td>Fußzeile</td>
-          <td>Endzeile der Tabelle (z.b:Summe)</td>
-        </tr>
-      </tbody>
-    </table>
-    <h1>Table Attributes</h1>
-    <table class="table">
-      <thead>
-        <th>Tag</th>
-        <th>Name</th>
-        <th>Beschreibung</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>&lt;colspan&gt;</td>
-          <td>Column span</td>
-          <td>
-            Definiert wie viele "td" in eine Spalte zusammengeführt werden
-          </td>
-        </tr>
-        <tr>
-          <td>&lt;rowspan&gt;</td>
-          <td>Row Spawn</td>
-          <td>
-            Definiert wie viele "tr" in einer Zeile zusammengeführt werden
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
+      <a class="homelink" href="#home">Zurück nach Oben</a>
+    </div>
+    <!-- HTML TABLE ATTRIBUTES -->
+    <div class="content">
+      <h1 id="tableatr">Table Attributes</h1>
+      <table class="table">
+        <thead>
+          <th>Tag</th>
+          <th>Name</th>
+          <th>Beschreibung</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&lt;colspan&gt;</td>
+            <td>Column span</td>
+            <td>
+              Definiert wie viele "td" in eine Spalte zusammengeführt werden
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;rowspan&gt;</td>
+            <td>Row Spawn</td>
+            <td>
+              Definiert wie viele "tr" in einer Zeile zusammengeführt werden
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a class="homelink" href="#home">Zurück nach Oben</a>
+    </div>
     <!-- CSS TAGS -->
+    <div class="content">
+      <h1 id="css">CSS Tags</h1>
+      <table>
+        <thead>
+          <th>Tag</th>
+          <th>Name</th>
+          <th>Beschreibung</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>color: *;</td>
+            <td>Foregroundcolor</td>
+            <td>Zum färben von Inhalten im Vordergrund (=Text)</td>
+          </tr>
+          <tr>
+            <td>background-color: *;</td>
+            <td>Backgroundcolor</td>
+            <td>zum färben vom Hintergrund</td>
+          </tr>
+          <tr>
+            <td>font-size: *px;</td>
+            <td>Schriftgröße</td>
+            <td>ändert die Schriftgrößen (*px, *em)</td>
+          </tr>
+          <tr>
+            <td>font-family: "*", *, *;</td>
+            <td>Schriftart</td>
+            <td>
+              Ändert die Schriftart, mehrer Angeben, bei Fehler wird Text sonst
+              nicht dagestellt
+            </td>
+          </tr>
+          <tr>
+            <td>text-align: *;</td>
+            <td>Textausrichtung</td>
+            <td>Richtet den Text aus (left, center, right)</td>
+          </tr>
+          <tr>
+            <td>align-items / justify-content: *;</td>
+            <td>Ausrichtung von Flexelementen</td>
+            <td>Ausrichtung innerhalb eines Container horizontal / vertical</td>
+          </tr>
+          <tr>
+            <td>font-weight: *;</td>
+            <td>Text formatierung</td>
+            <td>Zum formatieren in den Fettdruck (bold, 100-900,...)</td>
+          </tr>
+          <tr>
+            <td>border: *;</td>
+            <td>Rahmen</td>
+            <td>
+              Umrandung von HTML Elementen (solid, thick, pointed ,... / color /
+              *px )
+            </td>
+          </tr>
+          <tr>
+            <td>border-radius: *px/%;</td>
+            <td>Rahmenecken</td>
+            <td>
+              um Rahmen mit abgerundeten Ecken zu versehen<br />
+              (50% = rund)
+            </td>
+          </tr>
+          <tr>
+            <td>background-image: url("*")</td>
+            <td>Hintergrundbild</td>
+            <td>Hintergrundbild in einem Container (Siehe Header)</td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
+        <a class="homelink" href="#home">Zurück nach Oben</a>
+        
+      </div>
+    </div>
 
-    <h1>CSS Tags</h1>
-    <table>
-      <thead>
-        <th>Tag</th>
-        <th>Name</th>
-        <th>Beschreibung</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>color: *;</td>
-          <td>Foregroundcolor</td>
-          <td>Zum färben von Inhalten im Vordergrund (=Text)</td>
-        </tr>
-        <tr>
-          <td>background-color: *;</td>
-          <td>Backgroundcolor</td>
-          <td>zum färben vom Hintergrund</td>
-        </tr>
-        <tr>
-          <td>font-size: *px;</td>
-          <td>Schriftgröße</td>
-          <td>ändert die Schriftgrößen (*px, *em)</td>
-        </tr>
-        <tr>
-          <td>font-family: "*", *, *;</td>
-          <td>Schriftart</td>
-          <td>
-            Ändert die Schriftart, mehrer Angeben, bei Fehler wird Text sonst
-            nicht dagestellt
-          </td>
-        </tr>
-        <tr>
-          <td>text-align: *;</td>
-          <td>Textausrichtung</td>
-          <td>Richtet den Text aus (left, center, right)</td>
-        </tr>
-        <tr>
-          <td>align-items / justify-content: *;</td>
-          <td>Ausrichtung von Flexelementen</td>
-          <td>Ausrichtung innerhalb eines Container horizontal / vertical</td>
-        </tr>
-        <tr>
-          <td>font-weight: *;</td>
-          <td>Text formatierung</td>
-          <td>Zum formatieren in den Fettdruck (bold, 100-900,...)</td>
-        </tr>
-        <tr>
-          <td>border: *;</td>
-          <td>Rahmen</td>
-          <td>
-            Umrandung von HTML Elementen (solid, thick, pointed ,... / color /
-            *px )
-          </td>
-        </tr>
-        <tr>
-          <td>border-radius: *px/%;</td>
-          <td>Rahmenecken</td>
-          <td>
-            um Rahmen mit abgerundeten Ecken zu versehen<br />
-            (50% = rund)
-          </td>
-        </tr>
-         <tr>
-          <td>background-image: url("*")</td>
-          <td>Hintergrundbild</td>
-          <td>Hintergrundbild in einem Container (Siehe Header)
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <footer></footer>
   </body>
 </html>
