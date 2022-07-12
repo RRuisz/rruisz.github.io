@@ -1,4 +1,26 @@
-body {
-  display: flex;
-  justify-content: center;
+h1 {
+  text-align: center;
+  color: purple;
+}
+
+table, th, td {
+  border: thin;
+  margin: 10px auto;
+  min-width: 100px;
+  text-align: center;
+  padding: 5px;
+  
+}
+
+th {
+  background-color: green;
+  color: white;
+  font-size: 20px;
+}
+
+tr {
+  background-color: lightgreen;
+  color: black;
+  font-size: 18px;
+
 }
