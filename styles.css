@@ -1,19 +1,28 @@
 h1 {
   text-align: center;
-  color: purple;
+  color: #b094ae;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+  margin-top: 50px;
 }
 
-table, th, td {
+th, td {
   border: thin;
   margin: 10px auto;
   min-width: 100px;
   text-align: center;
-  padding: 5px;
-  
+  padding: 15px;
+  font-family: "open sans";
 }
 
+table {
+  background-color: grey;
+  margin: 0 auto;
+}
+
+
 th {
-  background-color: green;
+  background-color: #134f10;
   color: white;
   font-size: 20px;
 }
@@ -22,5 +31,26 @@ tr {
   background-color: lightgreen;
   color: black;
   font-size: 18px;
+
+}
+
+body {
+  background-color: #363030;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 150px;
+  background-color: grey;
+  background-image: url("https://image.shutterstock.com/image-vector/triangular-background-600w-283073108.jpg")
+}
+
+h2 {
+  text-align: center;
+  padding: 50px;
+  font-family: "Georgia";
+  font-size: 32px;
+
 
 }
